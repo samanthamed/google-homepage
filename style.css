@@ -25,7 +25,7 @@ a {
   color: #5B5B5B;
 }
 
-a:hover {
+a:hover, a:active {
   text-decoration: underline;
 }
 
@@ -68,8 +68,54 @@ a:hover {
   margin: 0 auto;
 }
 
+#logo {
+  margin-top: 97px;
+  margin-bottom: 27px;
+}
+
+#search input {
+  border-radius: 100px;
+  height: 42px;
+  width: 534px;
+  border: 1px solid #DDDDDD;
+  margin-bottom: 30px;
+  background-image: url("search.png");
+  background-repeat: no-repeat;
+  background-size: 22px;
+  background-position: 13px 12px;
+  padding-left: 47px;
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+#search input:hover, #search input:active, #search input:focus, #search input:focus-within {
+  -moz-box-shadow: 0 1px 5px 0 #DDDDDD;
+  box-shadow: 0 1px 5px 0 #DDDDDD;
+  border: 1px solid #E9E9E9;
+}
+
 #buttons {
   text-align: center;
+}
+
+#buttons input {
+  background-color: #F2F2F2;
+  padding: 8px 14px;
+  border-radius: 3px;
+  border: none;
+  color: #5F6368;
+  font-size: 14px;
+  margin-right: 10px;
+  border: 1px solid #F2F2F2;
+}
+
+#buttons input:hover, #buttons input:active {
+  background-image: -moz-linear-gradient(top,#f8f8f8,#f1f1f1);
+  background-image: linear-gradient(top,#f8f8f8,#f1f1f1);
+  -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+  cursor: pointer;
+  border: 1px solid #c6c6c6;
 }
 
 footer {
@@ -82,7 +128,7 @@ footer {
   border-top: 1px solid #E4E4E4;
   padding-left: 30px;
   padding-right: 7px;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 footer div {
