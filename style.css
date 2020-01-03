@@ -2,9 +2,8 @@ body {
   font: 13px ariel, sans-serif;
 }
 
-nav, footer {
-  padding-top: 16px;
-  padding-bottom: 10px;
+nav {
+  padding: 16px 12px 15px 15px;
 }
 
 nav {
@@ -30,10 +29,6 @@ a:hover {
   text-decoration: underline;
 }
 
-#nav-right {
-  margin-top: -9px;
-}
-
 #menu {
   width: 20px;
   vertical-align: middle;
@@ -52,12 +47,16 @@ a:hover {
 }
 
 #nav-left a {
-  padding-left: 15px;
+  padding-right: 15px;
 }
 
 #nav-right a {
-  padding-right: 12px;
+  padding-left: 12px;
   color: #252525;
+}
+
+#nav-right {
+  margin-top: -9px;
 }
 
 #nav-right a:hover {
@@ -73,6 +72,24 @@ a:hover {
   text-align: center;
 }
 
-footer a {
+footer {
+  height: 40px;
+  background-color: #F2F2F2;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top: 1px solid #E4E4E4;
+  padding-left: 30px;
+  padding-right: 7px;
+  font-size: 14px;
+}
+
+footer div {
   color: #5F6368;
+  padding-top: 14px;
+}
+
+footer a {
+  padding-right: 23px;
 }
